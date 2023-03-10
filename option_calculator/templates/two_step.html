@@ -1,0 +1,26 @@
+<h1>Two Steps Option Pricing Calculator</h1>
+<a href="two steps">two steps option pricing calculator</a>
+<div>
+<a href="n steps">n steps option pricing calculator</a>
+</div>
+
+<div>
+<a href="black scholes">black scholes option pricing calculator</a>
+</div>
+<hr>
+<form action="", method="POST">
+    {% csrf_token %}
+    {{two.as_p}}
+    <input type="submit" value="submit">
+</form>
+<hr>
+<div>
+    <h3>Result:</h3>
+</div>
+<div>
+    Put: {{put}}
+</div>
+<div>
+    Call: {{call}}
+</div>
+<hr>
